@@ -2,6 +2,9 @@
 
 ```mermaid
 flowchart LR
+   뒤로가기{뒤로가기}
+   아이콘{아이콘}
+
    회원가입["`/signUp
    회원가입`"]
 
@@ -29,8 +32,8 @@ flowchart LR
 
    회원가입 <--> 통합로그인
    통합로그인-. 사업자 .-> 사업자
-   사업자-. shipListClick .-> 대시보드
-   사업자-. shipListReportBtnClick .-> 전체리포트
+   사업자-. shipList-All-Icon(sidebar)-Click .-> 대시보드
+   사업자-. shipList-Report-All-Icon(sidebar)-Click .-> 전체리포트
    사업자-. markerHover .-> 툴팁(ToolTip-Sensing-Data)
-   사업자-. shipListDetailReportBtnClick .-> 각선박리포트차트
+   사업자-. shipList-Detail-Report-Icon(sidebar)-Click .-> 각선박리포트차트
 ```
