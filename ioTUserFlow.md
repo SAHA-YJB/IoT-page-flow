@@ -2,8 +2,10 @@
 
 ```mermaid
 flowchart LR
-   뒤로가기{뒤로가기}
-   아이콘{아이콘}
+   뒤로가기(뒤로가기)
+   아이콘(아이콘)
+   로그아웃(로그아웃)
+
    shipListAllBtn(shipListAllsidebarBtn)
    shipListAllReportBtn(shipListAllReportSidebarBtn)
    shipListDetailReportBtn(shipListDetailReportSidebarBtn)
