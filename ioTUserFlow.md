@@ -2,9 +2,9 @@
 
 ```mermaid
 flowchart LR
-   뒤로가기(뒤로가기)
-   아이콘(아이콘)
-   로그아웃(로그아웃)
+   뒤로가기([뒤로가기])
+   아이콘([아이콘])
+   로그아웃([로그아웃])
 
    shipListAllBtn(shipListAllsidebarBtn)
    shipListAllReportBtn(shipListAllReportSidebarBtn)
@@ -26,6 +26,12 @@ flowchart LR
    shipList(sidebar)
    `"]
 
+   운항자["`/operator
+   `"]
+
+   일반사용자["`/general
+   `"]
+
    대시보드["`/dashboard/allShip
    선박 전체 평균 데이터
    대시보드`"]
@@ -37,7 +43,9 @@ flowchart LR
    각 선박 리포트/차트`"]
 
    회원가입 <--> 통합로그인
-   통합로그인-. 사업자 .-> 사업자
+   통합로그인-- 사업자 --- 사업자
+   통합로그인-- 운항자 --- 운항자
+   통합로그인-- 일반사용자 --- 일반사용자
    사업자 --> shipListAllBtn --> 대시보드
    사업자 --> shipListAllReportBtn --> 전체리포트
    사업자--> markerHover --> 툴팁(ToolTip-Sensing-Data)
