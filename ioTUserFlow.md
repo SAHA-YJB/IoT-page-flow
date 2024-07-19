@@ -3,8 +3,20 @@
 ```mermaid
 flowchart LR
    뒤로가기([뒤로가기])
-   아이콘([아이콘])
    로그아웃([로그아웃])
+
+   아이콘(["sideBarIcon
+   (로고/home)
+   관제(/map)
+   대시보드(/dashboard)
+   리포트(/report/allShip)
+   사용자(/allUser)
+   예약(/reservation)
+   지출(/expenditure)
+   원격(/remote)
+   설정(/setting)"])
+
+
 
    shipListAllBtn(shipListAllsidebarBtn)
    shipListAllReportBtn(shipListAllReportSidebarBtn)
